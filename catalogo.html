@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo | Licoreria El Baul</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body data-page="catalog">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Licoreria El Baul</a>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html" aria-current="page">Catalogo</a>
+                <a href="carro.html">Carrito</a>
+                
+                <span id="navCartCount" class="badge">0</span>
+
+                <a href="administracion.html">Administracion</a>
+            </nav>
+        </div>
+    </header>
+        <main class="container">
+            <div class="page-head">
+                <h1 class="h2">Catalogo</h1>
+              <div class="filters">
+                <label class="field">
+                    <span class="muted small">Buscar</span>
+                    <input id="catalogSearch" class="input" type="search" placeholder="Buscar productos...">
+                </label>
+                <label class="field">
+                    <span class="muted small">Categoria</span>
+                    <select id="categoryFilter" class="input">
+                        <option value="">Todas</option>
+                        <option value="Sangria">Sangria</option>
+                        <option value="Whisky">Whisky</option>
+                        <option value="Ron">Ron</option>
+                        <option value="Vodka">Vodka</option>
+                        <option value="Tequila">Tequila</option>
+                        
+                    </select>
+
+                </label>
+              </div>  
+            </div>
+            <div id="catalogGrid" class="grid">
+              
+            </div>
+
+
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <span class="muted"><strong>Licoreria El Baul</strong></span>
+                <small>contacto: 0414-1234567</small>
+            </div>
+        </footer>
+        <div id="toastHost" class="toast" role="status" aria-live="polite"></div>
+        <script src="java/datos.js"></script>
+        <script src="java/carrito.js"></script>
+        <script src="java/product.js"></script>
+        <script src="java/apps.js"></script>
+
+</body>
+</html>

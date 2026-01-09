@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Licoreria El Baul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+    <header class="site-header"> 
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Licoreria El Baul</a>
+
+            <nav class="nav">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="carro.html">Carrito</a>
+                  
+                </a> 
+                <span id="navCartCount" class="badge">0</span>
+
+                <a href="administracion.html">Administracion</a>
+            </nav>
+        </div>
+    </header>
+     <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Licoreria El Baul</h1>
+          <img src="licoreria.jpg" alt="">
+          <p class="muted"><strong>Explore nuestra selección y agregue artículos a su carrito.</strong></p>
+          <div class="actions">
+            <a class="btn primary" href="catalogo.html">Compra ahora</a>
+            <a class="btn" href="carro.html">Ver carrito</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2 class="h4">Destacados</h2>
+         
+          <article class="card">
+            <div class="img-placeholder" aria-label="whisky Blue Label"><img src="whiskey.jpg" alt=""></div> 
+          <div class="card-body">
+            <h3 class="card-title">Whisky Blue Label</h3>
+            <div class="muted small">Whisky</div>
+            <div class="card-row">
+              <strong>120.000 cop</strong>
+              <span class="muted small">Stock: 10</span> 
+            </div>
+            <div class="card-actions">
+              <button class="btn primary" data-action="add-to-cart" data-product-id="1">Agregar al carrito</button>
+              <a class="btn" href="product.html?id=1">Ver detalles</a>
+            </div>
+            </div>
+          </article> 
+
+          <article class="card">
+            <div class="img-placeholder" aria-label="Ron Cacique"><img src="ron_cacique2.jpg" alt=""></div>
+          <div class="card-body">
+            <h3 class="card-title">Ron Cacique</h3>
+            <div class="muted small">Ron</div>
+            <div class="card-row">
+              <strong>70.000 cop</strong>
+              <span class="muted small">Stock: 15</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn primary" data-action="add-to-cart" data-product-id="2">Agregar al carrito</button>
+              <a class="btn" href="product.html?id=2">Ver detalles</a>
+            </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-placeholder" aria-label="Vodka Bajo 0"><img src="vodka.jpg" alt=""></div>
+          <div class="card-body">
+            <h3 class="card-title">Vodka Bajo 0</h3>
+            <div class="muted small">Vodka</div>
+            <div class="card-row">
+              <strong>50.000 cop</strong>
+              <span class="muted small">Stock: 9</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn primary" data-action="add-to-cart" data-product-id="3">Agregar al carrito</button>
+              <a class="btn" href="product.html?id=3">Ver detalles</a>
+            </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span class="muted"><strong>Licoreria El Baul</strong></span>
+        <small>contacto: 0414-1234567</small>
+      </div>
+    </footer>
+
+    <div id="toastHost" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="java/datos.js"></script>
+    <script src="java/carrito.js"></script>
+    <script src="java/product.js"></script>
+    <script src="java/apps.js"></script>
+ 
+
+</body>
+ </html> 

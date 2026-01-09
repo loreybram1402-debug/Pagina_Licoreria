@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración | Licoreria El Baul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="admin">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Licoreria El Baul</a>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="carro.html">Carrito</a>
+                
+                <span id="navCartCount" class="badge">0</span>
+
+                <a href="administracion.html" aria-current="page">Administracion</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="page-head">
+            <h1 class="h2">administracion de Licoreria</h1>
+            <p>Administrar los productos de la Licoreria El Baul</p>
+        </div>
+        <div class="admin-layout">
+            <section class="panel">
+                <h2 class="h4">Crear / Editar producto</h2>
+                <form id="adminForm" class="form">
+                <input id="adminId" type="hidden">
+                <label class="field">
+                    <span class="muted small">Nombre de producto</span>
+                    <input id="adminName" class="input" name="name" type="text" required>
+                </label>
+                <div class="grid-2">
+                    <label class="field">
+                        <span class="muted small">Categoria</span>
+                        <input id="adminCategory" class="input" type="text" placeholder="Whisky, Ron, ...">
+                    </label>
+                    <label class="field">
+                        <span class="muted small">Precio Cop</span>
+                        <input id="adminPrice" class="input" type="number" min="0" step="0.01" required>
+                    </label>
+                </div>
+                <div class="grid-2">
+                    <label class="field">
+                        <span class="muted small">Stock</span>
+                        <input id="adminStock" class="input" type="number" min="0" step="1" required>
+                    </label>
+                    <label class="field">
+                        <span class="muted small">Imagen URL</span>
+                        <input id="adminImage" class="input" type="url" placeholder="">
+                </div>
+                <label class="field">
+                    <span class="muted small">Descripción</span>
+                    <textarea id="adminDescription" class="input" rows="3"></textarea>
+                </label>
+                <div class="actions">
+                    <button class="btn primary" type="submit">Guardar Producto</button>
+                    <button id="adminReset" class="btn" type="button">Reiniciar</button>
+                </div>
+            </form> 
+            </section>
+            <section class="panel">
+                <h2 class="h4">Lista de Productos</h2>
+                <div id="adminTable"></div>
+                   
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+             <span class="muted"><strong>Licoreria El Baul</strong></span>
+             <small>contacto: 0414-1234567</small>
+        </div>
+    </footer>
+    <div id="toastHost" class="toast" role="status" aria-live="polite"></div>
+    <script src="java/datos.js"></script>
+    <script src="java/carrito.js"></script>
+    <script src="java/product.js"></script>
+    <script src="java/apps.js"></script>
+   
+</body>
+</html>

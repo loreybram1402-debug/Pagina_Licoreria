@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Licoreria El Baul</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="product">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Licoreria El Baul</a>
+        <nav class="nav">
+          <a href="index.html">inicio</a>
+          <a href="catalogo.html">Catalogo</a>
+          <a href="carro.html">Carrito <span id="navCartCount" class="badge">0</span></a>
+          <a href="administracion.html">Administracion</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="productDetail"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span class="muted">Licoreria El Baul</span>
+      </div>
+    </footer>
+
+    <div id="toastHost" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="java/datos.js"></script>
+    <script src="java/carrito.js"></script>    
+    <script src="java/product.js"></script>
+    <script src="java/apps.js"></script>
+
+  </body>
+</html>

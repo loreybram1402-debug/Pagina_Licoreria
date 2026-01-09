@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Licoreria El Baul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Licoreria El Baul</a>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="carro.html" aria-current="page">Carrito</a>
+                
+                <span id="navCartCount" class="badge">0</span>
+
+                <a href="administracion.html">Administracion</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="page-head">
+            <h1 class="h2">Tu carrito</h1>
+            <div class="actions">
+                <a class="btn" href="catalogo.html">Seguir comprando</a>
+                <a class="btn primary" href="verificar.html">Verificar</a>
+            </div>
+        </div>
+        <div class="cart-layout">
+            <section>
+                <div id="cartContainer" class="cart">
+                    <div class="empty">Tu carro esta vacio</div>
+                </div>
+            </section>
+            <aside>
+                <div id="cartSummary">
+                    <div class="summary">
+                        <div class="summary-row">
+                            <span class="muted">Elementos</span>
+                            <strong>0</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span class="muted">Total</span>
+                            <strong>0 cop</strong> 
+                     </div>
+                    </div>
+                </div>
+                <div class="mt">
+                    <a class="btn primary full" href="verificar.html">Finalizar compra</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+             <span class="muted"><strong>Licoreria El Baul</strong></span>
+             <small>contacto: 0414-1234567</small>
+        </div>
+        <div id="toastHost" class="toast" role="status" aria-live="polite"></div>
+    </footer>
+    <script src="java/datos.js"></script>
+    <script src="java/carrito.js"></script>
+    <script src="java/product.js"></script>
+    <script src="java/apps.js"></script>
+
+    
+</body>
+</html>

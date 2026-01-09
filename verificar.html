@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar | Licoreria El Baul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="checkout">
+    <header class="site-header">
+        <div class="container header-inner">
+        <a class="brand" href="index.html">Licoreria El Baul</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="carro.html">Carrito</a>
+            <span id="navCartCount" class="badge">0</span>
+            <a href="administracion.html">Administracion</a>
+        </nav>
+        </div>
+
+    </header>
+
+    <main class="container"> 
+        <div class="page-head"> 
+            <h1 class="h2">Verificar</h1>
+            <div class="actions">
+                <a class="btn" href="carro.html">Regresar al carrito</a>
+                </div>
+        </div>
+        <div class="checkout-layout">
+            <section>
+                <form id="checkoutForm" class="panel">
+                    <div class="grid-2">
+                        <label class="field">
+                            <span class="muted-small">Nombre completo</span>
+                            <input class="input" name="name" type="text" required>
+                        </label>
+                        <label class="field">
+                            <span class="muted-small">Correo electronico</span>
+                            <input class="input" name="email" type="email" required>
+                        </label>
+                        <label class="field">
+                            <span class="muted-small">Direccion</span>
+                            <input class="input" name="address" type="text" required>
+                        </label>
+                        <button class="btn primary" type="submit">Realizar pedido</button>
+                        <div id="checkoutMessage" class="mt"></div>
+                    </div>
+                </form>
+            </section>
+            <aside> 
+                <div id="checkoutSummary">
+                    <div class="summary">
+                        <div class="summary-row">
+                            <span class="muted">Elementos</span>
+                            <strong>0</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span class="muted">Total</span>
+                            <strong>0 cop</strong>
+
+                    </div>
+                </div>
+        </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+             <span class="muted"><strong>Licoreria El Baul</strong></span>
+             <small>contacto: 0414-1234567</small>
+        </div>
+    </footer>
+    <div id="toastHost" class="toast" role="status" aria-live="polite"></div>
+    <script src="java/datos.js"></script>
+    <script src="java/carrito.js"></script>
+    <script src="java/product.js"></script>
+    <script src="java/apps.js"></script>
+</body>
+</html>
